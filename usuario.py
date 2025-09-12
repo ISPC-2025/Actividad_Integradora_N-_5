@@ -1,21 +1,21 @@
 class Usuario:
     def __init__(self, huella, nombre, apellido, correo_electronico):
-        self.huella = huella
-        self.nombre = nombre
-        self.apellido = apellido
-        self.correo_electronico = correo_electronico
+        self.__huella = huella
+        self.__nombre = nombre
+        self.__apellido = apellido
+        self.__correo_electronico = correo_electronico
 
     def registrarse(self):
         #Método para que el usuario se registre
-        return 'Registro existoso'
+        return f'El usuario {self.__nombre} {self.__apellido} con el correo electrónico {self.__correo_electronico} se registró de manera correcta'
     
     def iniciar_sesion(self):
         #Método para que el usuario registrado inicie sesión
-        return 'Inició sesión correctamente'
+        return f'Bienvenido {self.__nombre} {self.__apellido}. Acabas de iniciar sesión correctamente'
     
     def cerrar_sesion(self):
         #Método de cierre de sesión
-        return 'Sesión cerrada'
+        return f'{self.__nombre} has cerrado sesión'
     
 mi_usuario = Usuario('','mariel','jimenez','mjim@arg.com')
 
