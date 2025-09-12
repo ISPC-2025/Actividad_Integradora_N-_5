@@ -14,5 +14,6 @@ class Modo:
 
 mi_modo = Modo(1, 'modo de ahorro de energia')
 
+
 print(mi_modo.activar())
 print(mi_modo.desactivar())
