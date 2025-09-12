@@ -5,8 +5,14 @@ class Modo:
 
     def activar(self):
         '''Método que activa una automatización especifica'''
-        return 'Automatización activada\n'
+        return f'\nId: {self.id} - {self.nombre} activada\n'
 
     def desactivar(self):
         '''Método que desactiva una automatización especifica'''
-        return 'Automatización desactivada\n'
+        return f'\nId: {self.id} - {self.nombre} desactivada\n'
+
+
+mi_modo = Modo(1, 'modo de ahorro de energia')
+
+print(mi_modo.activar())
+print(mi_modo.desactivar())
