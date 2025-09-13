@@ -16,9 +16,10 @@ class Usuario:
     def cerrar_sesion(self):
         #Método de cierre de sesión
         return f'{self.__nombre} has cerrado sesión'
-    
-mi_usuario = Usuario('','mariel','jimenez','mjim@arg.com')
 
-print(mi_usuario.registrarse())
-print(mi_usuario.iniciar_sesion())
-print(mi_usuario.cerrar_sesion())
+if __name__ == '__name__':
+    mi_usuario = Usuario('','mariel','jimenez','mjim@arg.com')
+
+    print(mi_usuario.registrarse())
+    print(mi_usuario.iniciar_sesion())
+    print(mi_usuario.cerrar_sesion())
